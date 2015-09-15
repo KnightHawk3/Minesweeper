@@ -4,10 +4,11 @@ Session.set("column", 10);
 var column = Session.get("column");
 var row = Session.get("row");
 
-var board = [[]];
+var board = [];
 
 for (var i = 0; i < row; i++) {
     for (var j = 0; j < column; j++) {
+        board.push([]);
         board[i][j] = {
             x: i,
             y: j,
@@ -16,7 +17,6 @@ for (var i = 0; i < row; i++) {
             clicked: false
         };
     }
-    board.push([]);
 }
 
 Session.set("board", board);
