@@ -1,0 +1,13 @@
+<template name="board">
+        <p>1</p>
+
+    {{#each board}}
+        <p>a</p>
+
+        {{#each this }}
+            <div class="box">
+                {{this.x}}, {{this.y}}
+            </div>
+        {{/each}}
+    {{/each}}
+</template>
