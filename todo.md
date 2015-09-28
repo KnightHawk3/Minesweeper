@@ -8,8 +8,10 @@
     - [ ] A bomb (with sound effect)
     - [ ] A clear square if no bombs within it's scope.
 3. [ ] Record number of row, columns, bombs, and username for each completed game to a total of 15
-4. [ ] Display for tablet
+4. [ ] Display for all screen types
 5. Display table
+    - [ ] Display on screen
+    - [X] Display prettily
     - [ ] Max Number of rows - 12
     - [ ] Min number of columns - 5
     - [ ] Max number of bombs < 15% of squares

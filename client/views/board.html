@@ -1,11 +1,9 @@
 <template name="board">
-        <p>1</p>
-
-    {{#each board}}
-        {{#each this }}
-            <div class="box">
-                {{this.x}}, {{this.y}}
+    {{#each board}} <!-- Each Row -->
+        {{#each this }} <!-- Each Cell in the row -->
+            <div class="box{{#if this.bomb}} bomb{{/if}}">
             </div>
         {{/each}}
+        <br>
     {{/each}}
 </template>

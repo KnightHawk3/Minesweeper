@@ -1,4 +1,12 @@
+.bomb {
+    background-color: black;
+}
+
 .box {
-    width: 100px;
-    height: 100px;
+    display: inline-block;
+    border: thin solid black;
+    width: 10px;
+    height: 10px;
+    padding: 4px;
+    /*margin: 4px;*/
 }
