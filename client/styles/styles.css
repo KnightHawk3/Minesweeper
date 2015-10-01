@@ -1,5 +1,13 @@
-.bomb {
+.bomb-true {
     background-color: black;
+}
+
+.flag-true {
+    background-color: green;
+}
+
+.question-true {
+    background-color: blue;
 }
 
 .box {

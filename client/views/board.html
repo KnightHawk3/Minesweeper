@@ -1,7 +1,8 @@
 <template name="board">
-    {{#each board}} <!-- Each Row -->
-        {{#each this }} <!-- Each Cell in the row -->
-            <div class="box{{#if this.bomb}} bomb{{/if}}">
+    <!-- Each row then each cell in the row -->
+    {{#each board}}
+        {{#each this }}
+            <div class="box {{classes this}}">
             </div>
         {{/each}}
         <br>
