@@ -3,8 +3,32 @@
 </head>
 
 <body>
-    <h1>Play Minesweeper!</h1>
-    {{>modes}}
-    {{>board}}
-    <p>test</p>
+    {{>navbar}}
+    <div class="container">
+        <div class="minesweeper">
+            <h1>Play Minesweeper!</h1>
+            {{#if flash}}
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden=true></span>
+                    {{flash}}
+                </div>
+            {{/if}}
+            {{#if hasLost}}
+                {{>lost}}
+            {{/if}}
+            {{#if hasWon}}
+                {{>won}}
+            {{/if}}
+            {{#if isPlaying}}
+                {{>modes}}
+                {{>board}}
+            {{/if}}
+            {{#if isMenu}}
+                {{>menu}}
+            {{/if}}
+            {{#if isHighscore}}
+                {{>highscore}}
+            {{/if}}
+        </div>
+    </div>
 </body>

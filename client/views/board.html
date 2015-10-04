@@ -1,10 +1,14 @@
 <template name="board">
     <!-- Each row then each cell in the row -->
-    {{#each board}}
-        {{#each this }}
-            <div class="box {{classes this}}">
-            </div>
+    <table class="board col-md-12">
+        {{#each board}}
+            <tr>
+            {{#each this }}
+                <td class="box {{classes this}}">
+                    {{this.adjacent}}
+                </td>
+            {{/each}}
+            </tr>
         {{/each}}
-        <br>
-    {{/each}}
+    </table>
 </template>

@@ -1,0 +1,22 @@
+<template name="highscore">
+    <!-- Each row then each cell in the row -->
+    <table class="highscores table table-bordered table-striped table-condensed col-md-12">
+        <tr>
+            <th>Name</th>
+            <th>Rows</th>
+            <th>Column</th>
+            <th>Bombs</th>
+            <th>Clicks</th>
+        </tr>
+
+        {{#each entries}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{rows}}</td>
+                <td>{{columns}}</td>
+                <td>{{bombs}}</td>
+                <td>{{clicks}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</template>
